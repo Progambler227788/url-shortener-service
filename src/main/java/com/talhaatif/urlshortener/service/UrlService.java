@@ -2,8 +2,6 @@ package com.talhaatif.urlshortener.service;
 
 import com.talhaatif.urlshortener.model.ShortenedUrl;
 import com.talhaatif.urlshortener.repository.UrlRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import java.security.SecureRandom;
 import java.util.Optional;

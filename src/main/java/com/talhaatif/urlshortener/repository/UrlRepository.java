@@ -2,7 +2,6 @@ package com.talhaatif.urlshortener.repository;
 
 import com.talhaatif.urlshortener.model.ShortenedUrl;
 import org.springframework.data.mongodb.repository.MongoRepository;
-
 import java.util.Optional;
 
 
