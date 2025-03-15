@@ -14,6 +14,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String health(){
-        return "Let's use tickojet";
+        return "Let's use URL shortening";
     }
 }
