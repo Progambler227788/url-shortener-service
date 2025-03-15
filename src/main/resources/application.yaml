@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: urlshortener
+  server:
+    port: ${SERVER_PORT}
+  config:
+    import: optional:file:.env[.properties]
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+      database: urlshortener
+      auto-index-creation: true
+# characters involved in shortening the URL
+characters: ${CHARACTERS}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enable: true
+  show-actuator: true
+  packages-to-scan:  com.talhaatif.urlshortener.controller
+
+#   don't add semicolon after controller; otherwise package to scan will not work
+
+
+swagger:
+  api:
+    title: "? URL Shortener API"
+    version: "1.0.0"
+    email: ${CONTACT_EMAIL}
+    description: |
+      ### Welcome to the URL Shortener API Documentation ?
+
+      The **URL Shortener API** is a robust, scalable, and high-performance service designed to simplify URL management. Built with **Spring Boot**, this API allows users to generate short, unique aliases for long URLs, enabling efficient sharing, tracking, and analytics.
+
+      ---
+
+      #### Key Features:
+      - **URL Shortening**: Generate concise and memorable short URLs from long, complex ones.
+      - **Original URL Retrieval**: Retrieve the original URL from a shortened alias.
+      - **Usage Analytics**: Track and analyze URL usage statistics, including click counts and timestamps.
+      - **Customizable Expiry**: Set expiration policies for shortened URLs to ensure controlled access.
+      - **RESTful Design**: Fully compliant with REST standards for seamless integration.
+
+      ---
+
+      #### Current Features:
+      - **Shorten URL**: Customers can generate a shortened version of any valid URL.
+      - **Retrieve Original URL**: Customers can retrieve the original URL using the shortened alias.
+      - **View Statistics**: Customers can access detailed usage statistics for their shortened URLs.
+
+      ---
