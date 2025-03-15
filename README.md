@@ -1,5 +1,7 @@
 # URL Shortener API
 
+This is a solution to the URL shortener project on roadmap.sh : https://roadmap.sh/projects/url-shortening-service
+
 ## Overview
 This is a simple URL Shortener API built using Java and Spring Boot. It allows users to shorten long URLs and retrieve the original URLs when needed.
 
