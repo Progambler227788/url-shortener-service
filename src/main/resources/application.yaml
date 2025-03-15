@@ -10,8 +10,6 @@ spring:
       uri: ${MONGO_URI}
       database: urlshortener
       auto-index-creation: true
-# characters involved in shortening the URL
-characters: ${CHARACTERS}
 
 springdoc:
   api-docs:
@@ -29,7 +27,6 @@ swagger:
   api:
     title: "? URL Shortener API"
     version: "1.0.0"
-    email: ${CONTACT_EMAIL}
     description: |
       ### Welcome to the URL Shortener API Documentation ?
 
